@@ -1,8 +1,7 @@
 //- include header.pug
 
-header.header 
-    .header__container
-
+header.header(id='open') 
+    .header__container(id='close') 
         .header__bar 
             .header__info
                 .header__logo 
@@ -24,14 +23,17 @@ header.header
                     a( href="tel:+74966141515") +7 (496) 614-15-15
                     a( href="tel:+79260255767") +7 (926) 025-57-67
                     a.header__call Перезвоните мне
-                a.header__button(href='#menu')
+                a.header__open(href='#open')
                     span
+                    span
+                    span
+                a.header__close(href='#close')
                     span
                     span
         
     .header__nav.nav
         .nav__container
-            nav.nav__body(id='menu')
+            nav.nav__body
                 ul.nav__list
                     each name in ['Главная', 'Акции', 'Услуги', 'Врачи', 'Отзывы', 'Лицензии', 'О клинике', 'Контакты']
                         li.nav__item
