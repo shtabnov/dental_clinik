@@ -1,0 +1,39 @@
+//- include header.pug
+
+header.header 
+    .header__container
+
+        .header__bar 
+            .header__info
+                .header__logo 
+                    img(src="images/logo.png", alt="logo")
+                    p Стоматологическая клиника 
+                .header__address
+                    h4 Адрес
+                    p г. Коломна, ул. Октябрьской революции д. 161
+                .header__time 
+                    h4 Время работы
+                    p Работаем без выходных с 9:00 до 21:00
+            .header__control
+                .header__social 
+                    a(href="tg://msg?text=<?php echo urlencode( '<TEXT>' ); ?>&to=89260255767") 
+                        img(src="images/tg_icon.svg", alt="Telegram")
+                    a(href="https://wa.me/89260255767")
+                        img(src="images/wa_icon.svg", alt="Whatsapp")
+                .header__phone 
+                    a( href="tel:+74966141515") +7 (496) 614-15-15
+                    a( href="tel:+79260255767") +7 (926) 025-57-67
+                    a.header__call Перезвоните мне
+                a.header__button(href='#menu')
+                    span
+                    span
+                    span
+        
+    .header__nav.nav
+        nav.nav__body(id='menu')
+            .nav__container
+                ul.nav__list
+                    each name in ['Главная', 'Акции', 'Услуги', 'Врачи', 'Отзывы', 'Лицензии', 'О клинике', 'Контакты']
+                        li.nav__item
+                            a.nav__link(href="#")= name
+    
