@@ -19,6 +19,32 @@ a {
     cursor: pointer;
 }
 
+.btn {
+    display: inline-block;
+    padding: 7.5px 55.5px;
+
+    border: 2px solid $c1;
+
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    border-radius: 30px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: $c1;
+
+    &_fill {
+        padding: 9px 45.5px;
+        border: none;
+        background-color: $c1;
+
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: white;
+    }
+}
+
 [class*="__container"] {
     max-width: 1290px;
     margin: 0 auto;

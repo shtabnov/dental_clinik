@@ -151,6 +151,7 @@
 @media (max-width: 1025px) {
     .header {
         margin-top: 25px;
+        margin-bottom: 21px;
 
         &:target {
 
@@ -220,7 +221,7 @@
             background: white;
             box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
             border-radius: 20px;
-            z-index: 10;
+            z-index: 5;
     
             & span {
                 width: 40px;
@@ -246,7 +247,7 @@
             background: white;
             box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
             border-radius: 20px;
-            z-index: 10;
+            z-index: 5;
     
             & span {
 
@@ -274,6 +275,7 @@
 
     .nav {
         margin-top: 0px;
+        
 
         &__body {
             position: fixed;
@@ -283,6 +285,7 @@
             height: 100%;
             background-color: $c4;
             transition: top 0.4s ease-in-out 0.1s;
+            z-index: 3;
 
             &:target {
                 left: 0;
@@ -345,6 +348,7 @@
 @media (max-width: 630px) {
     .header {
         margin-top: 0px;
+        margin-bottom: 0px;
         padding-top: 10px;
         padding-bottom: 15px;
         background-color: $c4;
