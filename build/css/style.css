@@ -64,6 +64,15 @@ a {
   line-height: 22px;
   color: white;
 }
+.btn_big {
+  padding: 15.5px 136px;
+  border: none;
+  background-color: #046DBF;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+}
 
 [class*=__container] {
   max-width: 1290px;
@@ -525,6 +534,7 @@ a {
 .features {
   position: relative;
   top: -50px;
+  margin-bottom: 40px;
 }
 .features__wrapper {
   display: grid;
@@ -577,6 +587,7 @@ a {
 @media (max-width: 1025px) {
   .features {
     top: -12px;
+    margin-bottom: 78px;
   }
   .features__wrapper {
     grid-gap: 42px;
@@ -638,6 +649,7 @@ a {
 @media (max-width: 769px) {
   .features {
     top: -34px;
+    margin-bottom: 54px;
   }
   .features__wrapper {
     grid-gap: 19px;
@@ -673,6 +685,7 @@ a {
 @media (max-width: 630px) {
   .features {
     top: -46px;
+    margin-bottom: 44px;
   }
   .features__wrapper {
     grid-gap: 20px;
@@ -691,5 +704,180 @@ a {
   }
   .features__txt {
     text-align: center;
+  }
+}
+.consult__container {
+  text-align: center;
+}
+.consult__container h2 {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 120%;
+  color: #474551;
+}
+.consult__container p {
+  margin-top: 30px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #099DBA;
+}
+.consult__wrapper {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 31px;
+}
+.consult__block h3 {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #474551;
+}
+.consult__block p {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #474551;
+}
+.consult__block:nth-child(1) {
+  grid-column: 1/span 4;
+}
+.consult__block:nth-child(2) {
+  grid-column: 5/span 4;
+}
+.consult__block:nth-child(3) {
+  grid-column: 9/span 4;
+}
+.consult__img {
+  height: 280px;
+  overflow: hidden;
+  filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+  border-radius: 20px;
+}
+.consult__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 1025px) {
+  .consult__container h2 {
+    font-size: 36px;
+  }
+  .consult__container p {
+    font-size: 24px;
+  }
+  .consult__wrapper {
+    margin-bottom: 60px;
+    grid-gap: 39px;
+  }
+  .consult__block h3 {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+  }
+  .consult__block p {
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .consult__img {
+    height: 200px;
+    overflow: hidden;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    border-radius: 20px;
+  }
+  .consult__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 769px) {
+  .consult__container h2 {
+    font-size: 36px;
+  }
+  .consult__container p {
+    font-size: 24px;
+  }
+  .consult__wrapper {
+    margin-bottom: 60px;
+    grid-gap: 19px;
+  }
+  .consult__block h3 {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .consult__block p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .consult__img {
+    height: 200px;
+    overflow: hidden;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    border-radius: 20px;
+  }
+  .consult__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+@media (max-width: 630px) {
+  .consult__container h2 {
+    font-size: 20px;
+  }
+  .consult__container p {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .consult__wrapper {
+    margin-top: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 30px;
+  }
+  .consult__block h3 {
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .consult__block p {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .consult__block:nth-child(1) {
+    grid-column: 1/span 6;
+  }
+  .consult__block:nth-child(2) {
+    grid-column: 1/span 6;
+  }
+  .consult__block:nth-child(3) {
+    grid-column: 1/span 6;
+  }
+  .consult__img {
+    height: 200px;
+    overflow: hidden;
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.05));
+    border-radius: 20px;
+  }
+  .consult__img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .btn_big {
+    padding: 15.5px 74px;
   }
 }

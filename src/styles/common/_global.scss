@@ -43,6 +43,17 @@ a {
         line-height: 22px;
         color: white;
     }
+
+    &_big {
+        padding: 15.5px 136px;
+        border: none;
+        background-color: $sk;
+
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        color: white;
+    }
 }
 
 [class*="__container"] {
