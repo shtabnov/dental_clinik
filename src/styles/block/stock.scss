@@ -1,0 +1,130 @@
+.stock {
+
+    &__container {
+        text-align: center;
+
+        & h2 {
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 120%;
+            color: $c5;
+        }
+
+        & p {
+            margin-top: 30px;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 140%;
+            color: $c1;
+        }
+
+        & strong {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 140%;
+            color: $sk;
+        }
+    }
+
+    &__slider {
+        margin-top: 30px;
+    }
+
+    &__modal {
+        max-width: 412px;
+        margin: 0 auto;
+        padding: 60px 34px;
+        background-color: $c4;
+
+        & h2 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 140%;
+            text-align: center;
+            color: $c1;
+            
+            margin-bottom: 60px;
+        }
+
+        & p {
+            margin: 0;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $c5;
+            margin-left: 21px;
+        }
+
+        & .btn {
+            position: relative;
+            margin-bottom: 30px;
+            padding: 7.5px 81.5px;
+            background-color: white;
+
+
+            &::before {
+                content: url('../images/vk.svg');
+                position: absolute;
+                left: 8%;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img {
+            height: 28px;
+            margin-right: 9px;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .stock {
+
+        &__container {
+            text-align: center;
+    
+            & h2 {
+                font-size: 36px;
+            }
+
+            & p {
+                display: inline;
+            }
+        }
+    
+        &__slider {
+            margin-top: 60px;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .stock {
+
+        &__container {
+            text-align: center;
+    
+            & h2 {
+                font-size: 20px;
+            }
+
+            & p {
+                font-size: 18px;
+            }
+
+            & strong {
+                font-size: 18px;
+            }
+
+        }
+    
+        &__slider {
+            margin-top: 60px;
+        }
+    }
+}

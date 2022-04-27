@@ -1,0 +1,128 @@
+.splide {
+
+    &__img {
+        height: 410px;
+        border-radius: 20px;
+        overflow: hidden;
+
+        & img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__slide {
+
+        & > .btn {
+            position: relative;
+            top: -65px;
+            background: rgba(255, 255, 255, 0.6);
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        
+
+        &--next {
+            right: -50px;
+            transform: translate(0%, -100%);
+        }
+
+        &--prev {
+            left: -50px;
+            transform: rotate(180deg) translate(0%, 100%);
+        }
+    }
+
+    &__track {
+        margin-bottom: 33px;
+    }
+
+    &__pagination__page {
+        border: none;
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background-color: $c3;
+        margin-right: 20px;
+
+        &.is-active {
+            width: 24px;
+            height: 24px;
+            background-color: $c2;
+        }
+    }
+}
+
+@media (max-width: 1025px) {
+    .splide {
+
+        &__img {
+            height: 300px;
+        }
+
+        &__arrow {
+            position: absolute;
+            top: 50%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            z-index: 5;
+            
+    
+            &--next {
+                right: 0px;
+                transform: translate(0%, -100%);
+            }
+    
+            &--prev {
+                left: 0px;
+                transform: rotate(180deg) translate(0%, 100%);
+            }
+        }
+    }
+}
+
+@media (max-width: 769px) {
+    .splide {
+
+        &__img {
+            height: 354px;
+        }
+
+        &__arrow {
+            position: absolute;
+            top: 50%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            z-index: 100;
+            
+    
+            &--next {
+                right: 0px;
+                transform: translate(0%, -100%);
+            }
+    
+            &--prev {
+                left: 0px;
+                transform: rotate(180deg) translate(0%, 100%);
+            }
+        }
+    }
+}
+
+@media (max-width: 630px) {
+    .splide {
+
+        &__img {
+            height: 280px;
+        }
+    }
+}

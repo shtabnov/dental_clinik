@@ -1,0 +1,43 @@
+//- includes stock.pug
+
+section.stock 
+    .stock__container 
+        h2 Акции
+        p Для подписчиков группы VK стоматологической клиники "Семейный доктор"
+        strong  действуют акции и специальные предложения
+        .stock__slider.splide(role="group" aria-label="Splide Basic HTML Example")
+            .splide__track
+                ul.splide__list
+                    li.splide__slide
+                        .splide__img 
+                            img(src="images/slide_1.png", alt="Акция")
+                        a.btn Участвовать
+                    li.splide__slide
+                        .splide__img 
+                            img(src="images/slide_2.png", alt="Акция")
+                        a.btn Участвовать
+                    li.splide__slide
+                        .splide__img 
+                            img(src="images/slide_3.png", alt="Акция")
+                        a.btn Участвовать
+                    li.splide__slide
+                        .splide__img 
+                            img(src="images/slide_1.png", alt="Акция")
+                        a.btn Участвовать
+                    li.splide__slide
+                        .splide__img 
+                            img(src="images/slide_2.png", alt="Акция")
+                        a.btn Участвовать
+                    li.splide__slide
+                        .splide__img 
+                            img(src="images/slide_3.png", alt="Акция")
+                        a.btn Участвовать
+        .stock__modal
+            h2 Для участия в акции подпишитесь на нашу группу в ВК#[strong онтакте]
+            a.btn Стать участником
+            .stock__social 
+                    a(href="tg://msg?text=<?php echo urlencode( '<TEXT>' ); ?>&to=89260255767") 
+                        img(src="images/tg_icon.svg", alt="Telegram")
+                    a(href="https://wa.me/89260255767")
+                        img(src="images/wa_icon.svg", alt="Whatsapp")
+                    p спросить в мессенджере

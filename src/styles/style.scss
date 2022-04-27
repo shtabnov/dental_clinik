@@ -1,3 +1,4 @@
+@import url('https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/css/splide-core.min.css');
 @import 'common/fonts';
 @import 'common/variables';
 @import 'common/_global';
@@ -6,3 +7,5 @@
 @import 'block/header.scss';
 @import 'block/features.scss';
 @import 'block/consult.scss';
+@import 'block/stock.scss';
+@import 'block/splide.scss';
