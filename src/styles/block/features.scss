@@ -16,6 +16,21 @@
         background: $c4;
         box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
         border-radius: 20px;
+  
+        & h2 {
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 140%;
+            color: $c1;
+        }
+
+        & p {
+            margin-top: 10px;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 140%;
+            color: black;
+        }
 
         &:nth-child(1) {
             grid-column: 1 / span 4;
@@ -43,23 +58,6 @@
                 margin-right: 38px;
             }
         }
-
-        & h2 {
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 140%;
-            color: $c1;
-        }
-
-        & p {
-            margin-top: 10px;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 140%;
-            color: black;
-        }
-
-        
     }
 }
 
@@ -78,6 +76,16 @@
             justify-content: flex-start;
             flex-direction: column;
             padding: 35px 25px 35px 25px;
+
+            
+            & h2 {
+                font-size: 22px;
+            }
+    
+            & p {
+                margin-top: 20px;
+                font-size: 20px;
+            }
     
             &:nth-child(1) {
                 grid-column: 1 / span 4;
@@ -88,12 +96,7 @@
                     margin-bottom: 20px;
                 }
 
-                & h2 {
-                    font-size: 22px;
-                }
-        
                 & p {
-                    margin-top: 20px;
                     font-size: 16px;
                 }
             }
@@ -106,14 +109,6 @@
                     margin-right: 0px;
                     margin-bottom: 20px;
                 }
-
-                & h2 {
-                    font-size: 22px;
-                }
-        
-                & p {
-                    margin-top: 20px;
-                }
             }
     
             &:nth-child(3) {
@@ -124,17 +119,7 @@
                     margin-right: 0px;
                     margin-bottom: 20px;
                 }
-
-                & h2 {
-                    font-size: 22px;
-                }
-        
-                & p {
-                    margin-top: 20px;
-                }
             }
-    
-
         }
 
         &__txt {
@@ -154,41 +139,14 @@
     
         &__block {
             padding: 35px 20px 35px 20px;
-    
-            &:nth-child(1) {
- 
-                & h2 {
-                    font-size: 18px;
-                }
-        
-                & p {
-                    margin-top: 60px;
-                    font-size: 16px;
-                }
+       
+            & h2 {
+                font-size: 18px;
             }
     
-            &:nth-child(2) {
-
-                & h2 {
-                    font-size: 18px;
-                }
-        
-                & p {
-                    margin-top: 60px;
-                    font-size: 16px;
-                }
-            }
-    
-            &:nth-child(3) {
-
-                & h2 {
-                    font-size: 18px;
-                }
-        
-                & p {
-                    margin-top: 60px;
-                    font-size: 16px;
-                }
+            & p {
+                margin-top: 60px;
+                font-size: 16px;
             }
         }
 
