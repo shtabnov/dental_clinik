@@ -982,16 +982,29 @@ a {
   position: absolute;
   top: 50%;
   border: none;
+  border-radius: 50%;
   outline: none;
-  background-color: transparent;
+  background-color: white;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
 }
 .splide__arrow--next {
   right: -50px;
-  transform: translate(0%, -100%);
+  transform: translate(0, -50%);
+}
+.splide__arrow--next::before {
+  content: url("../images/arrow_1.svg");
 }
 .splide__arrow--prev {
   left: -50px;
-  transform: rotate(180deg) translate(0%, 100%);
+  transform: translate(0, -50%);
+}
+.splide__arrow--prev::before {
+  content: url("../images/arrow_2.svg");
+}
+.splide__arrow:hover {
+  outline: 3px solid #099DBA;
 }
 .splide__track {
   margin-bottom: 33px;
