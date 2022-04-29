@@ -1,0 +1,28 @@
+.services {
+    
+    &__container {
+        text-align: center;
+
+        & h2 {
+            font-weight: 500;
+            font-size: 42px;
+            line-height: 120%;
+            color: $c5;
+        }
+
+        & p {
+            margin-top: 30px;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 140%;
+            color: $c1;
+        }
+
+        & strong {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 140%;
+            color: $sk;
+        }
+    }
+}
