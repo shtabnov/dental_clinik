@@ -27,6 +27,7 @@ body {
   font-family: Gilroy;
   margin: 0;
   padding: 0px 0px;
+  color: #474551;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -76,6 +77,9 @@ a {
 }
 .btn_mod {
   background: rgba(255, 255, 255, 0.6);
+}
+.btn_price {
+  background: #BDF8F9;
 }
 
 [class*=__container] {
@@ -1102,4 +1106,36 @@ a {
   font-size: 28px;
   line-height: 140%;
   color: #046DBF;
+}
+.services__item h1 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 140%;
+  color: #099DBA;
+}
+.services__item p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  color: #474551;
+}
+.services__item ul {
+  list-style: disc;
+}
+.services__item li {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+}
+.services__social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.services__social img {
+  height: 28px;
+  margin-right: 9px;
+}
+.services__social p {
+  margin: 0;
 }
