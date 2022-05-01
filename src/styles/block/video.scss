@@ -1,0 +1,59 @@
+.video {
+    margin-top: 30px;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding: 60px 80px 30px 80px;
+        background: $c4;
+        box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+    }
+
+    &__block {
+        grid-column: 1 / span 1;
+
+        & h2 {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 140%;
+            color: $c1;
+            margin-bottom: 60px;
+        }
+
+        & strong {
+            color: $sk;
+        }
+
+        & p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: $c1;
+            margin-bottom: 9px;
+        }
+
+        & video {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__list {
+        grid-column: 2 / span 1;
+
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 140%;
+        padding-left: 20px;
+    }
+
+    &__item {
+        list-style: disc;
+        margin-bottom: 10px;
+    }
+
+    &__features {
+        grid-column: 1 / span 2;
+    }
+}
