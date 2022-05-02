@@ -63,6 +63,12 @@ a {
     &_price {
         background: $c3;
     }
+
+    &_blue {
+        background-color: $sk;
+        border: 2px solid $sk;
+        color: white;
+    }
 }
 
 [class*="__container"] {
