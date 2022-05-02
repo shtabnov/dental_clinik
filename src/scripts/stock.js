@@ -1,4 +1,4 @@
-new Splide( '.splide', {
+new Splide( '#stock_slide', {
     type: 'loop',
     perPage: 1,
     perMove: 1,
@@ -28,3 +28,8 @@ new Splide( '.splide', {
     }
 
 } ).mount();
+
+new Splide('#doc_slide', {
+    type: 'loop',
+    pagination: false,
+}).mount();
