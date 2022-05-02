@@ -37,5 +37,4 @@ header.header(id='open')
                 ul.nav__list
                     each name in ['Главная', 'Акции', 'Услуги', 'Врачи', 'Отзывы', 'Лицензии', 'О клинике', 'Контакты']
                         li.nav__item
-                            a.nav__link(href="#")= name
-    
+                            a.nav__link(href=`#${name.replace(/\s+/g, '')}`)= name

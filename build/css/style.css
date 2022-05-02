@@ -23,6 +23,10 @@
   font-weight: 700;
   font-style: normal;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: Gilroy;
   margin: 0;
