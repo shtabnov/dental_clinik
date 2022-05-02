@@ -45,16 +45,19 @@
 
     &__list {
         grid-column: 2 / span 1;
-
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 140%;
         padding-left: 20px;
+
+        & > .btn {
+            display: none;
+        }
     }
 
     &__item {
         list-style: disc;
         margin-bottom: 10px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 140%;
     }
 
     &__features {
@@ -159,9 +162,199 @@
         justify-content: center;
         gap: 30px;
         margin-top: 30px;
+    }
+}
 
-        &_fill {
-            background-color: $sk;
+@media (max-width: 1025px) {
+
+    .video {
+
+        &__wrapper {
+            padding: 60px 61px 30px 61px;
+        }
+
+        &__block {
+            grid-column: 1 / span 2;
+            text-align: center;
+
+            & h2 {
+                margin-bottom: 30px;
+            }
+
+            & > .btn {
+                display: none;
+            }
+        }
+
+        &__list {
+            grid-column: 1 / span 2;
+            padding-left: 20px;
+            margin: 0 auto;
+
+            & > .btn {
+                display: inline-block;
+                background-color: white;
+                margin-top: 60px;
+                margin-bottom: 60px;
+                padding: 14.4px 36.5px;
+            }
+        }
+
+        &__features {
+
+            & li {
+                margin-top: 10px;
+
+                &:nth-child(1) {
+                    grid-column: 2 / span 10;
+                }
+                &:nth-child(2) {
+                    grid-column: 2 / span 10;
+                }
+                &:nth-child(3) {
+                    grid-column: 2 / span 10;
+                }
+                &:nth-child(4) {
+                    grid-column: 2 / span 10;
+                }
+            }
+        }
+
+        &__social {
+            margin-top: 23px;
+        }
+
+        &__btn {
+            margin-top: 19.5px;
+        }
+    }
+}
+
+@media (max-width: 769px) {
+
+    .video {
+
+        &__wrapper {
+            padding: 60px 22px 30px 22px;
+        }
+
+        &__block {
+            grid-column: 1 / span 2;
+            text-align: center;
+
+            & h2 {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__item {
+            font-size: 20px;
+        }
+
+        &__features {
+            padding-bottom: 30px;
+
+            & li {
+                margin-top: 10px;
+                font-size: 18px;
+            }
+        }
+
+        &__social {
+            margin-top: 23px;
+        }
+
+        &__btn {
+            display: none;
+        }
+    }
+}
+
+@media (max-width: 630px) {
+
+    .video {
+
+        &__wrapper {
+            padding: 60px 22px 30px 22px;
+        }
+
+        &__block {
+            grid-column: 1 / span 2;
+            text-align: center;
+
+            & h2 {
+                margin-bottom: 20px;
+            }
+
+            & p {
+                font-size: 14px;
+            }
+
+            & video {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &__list {
+
+            & > .btn {
+                display: inline-block;
+                background-color: white;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                padding: 14.4px 36.5px;
+            }
+        }
+
+        &__item {
+            font-size: 16px;
+        }
+
+        &__features {
+            padding-bottom: 30px;
+
+            & li {
+                margin-top: 10px;
+                font-size: 18px;
+                flex-direction: column;
+
+                &::before {
+                    font-size: 30px;
+                    width: 40px;
+                    height: 40px;
+                    margin: 0;
+                }
+
+                &:nth-child(1) {
+                    &::before {
+                        padding: 5px 10px 5px 10px;
+                    }
+                }
+                &:nth-child(2) {
+                    &::before {
+                        padding: 5px 10px 5px 10px;
+                    }
+                }
+                &:nth-child(3) {
+                    &::before {
+                        padding: 5px 10px 5px 10px;
+                    }
+                }
+                &:nth-child(4) {
+                    &::before {
+                        padding: 5px 10px 5px 10px;
+                    }
+                }
+            }
+        }
+
+        &__social {
+            margin-top: 23px;
+        }
+
+        &__btn {
+            display: none;
         }
     }
 }
