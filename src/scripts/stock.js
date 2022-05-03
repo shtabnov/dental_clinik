@@ -33,3 +33,24 @@ new Splide('#doc_slide', {
     type: 'loop',
     pagination: false,
 }).mount();
+
+new Splide('#reviews_slide', {
+    perPage: 1,
+    perMove: 1,
+    type: 'loop',
+
+    fixedWidth: '50%',
+    fixedHeight: '330px',
+
+    breakpoints: {
+		1025: {
+            fixedHeight: '442px',
+		},
+
+        769: {
+            perPage: 1,
+            fixedWidth: '100%',
+            fixedHeight: '340px',
+		},
+    }
+}).mount();
