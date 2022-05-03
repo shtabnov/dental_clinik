@@ -54,3 +54,26 @@ new Splide('#reviews_slide', {
 		},
     }
 }).mount();
+
+new Splide('#awards_slide', {
+    type: 'loop',
+
+    fixedWidth: '25%',
+    fixedHeight: '440px',
+
+    breakpoints: {
+		1025: {
+            fixedHeight: '348px',
+		},
+
+        769: {
+            fixedWidth: '50%',
+            fixedHeight: '504px',
+        },
+
+        630: {
+            fixedWidth: '100%',
+            fixedHeight: '504px',
+        }
+    },
+}).mount();
