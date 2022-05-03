@@ -11,6 +11,7 @@
     }
 
     &__txt-block {
+        text-align: left;
         
         & h1 {
             max-width: 926px;
@@ -27,6 +28,7 @@
             font-size: 28px;
             line-height: 140%;
             color: $c1;
+            text-align: left;
         }
 
         & p {

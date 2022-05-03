@@ -3,13 +3,11 @@
 
     &__container {
 
-        & h2 {
-            font-weight: 700;
+        & h3 {
+            text-align: left;
             font-size: 36px;
-            line-height: 45px;
-            color: $c1;
         }
-
+        
         & strong {
             color: $sk;
         }

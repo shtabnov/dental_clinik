@@ -77,3 +77,12 @@ new Splide('#awards_slide', {
         }
     },
 }).mount();
+
+new Splide('#about_slide', {
+    type: 'loop',
+
+    fixedWidth: '25%',
+    fixedHeight: '200px',
+    gap: '10px',
+
+}).mount();

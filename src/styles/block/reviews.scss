@@ -1,25 +1,6 @@
 .reviews {
     margin-top: 128px;
 
-    &__container {
-
-        & h2 {
-            margin-bottom: 30px;
-            font-weight: 500;
-            font-size: 42px;
-            line-height: 120%;
-            text-align: center;
-        }
-
-        & p {
-            font-weight: 600;
-            font-size: 28px;
-            line-height: 140%;
-            text-align: center;
-            color: $c1;
-        }
-    }
-
     &__card {
         position: relative;
         display: flex;
