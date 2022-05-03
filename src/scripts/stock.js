@@ -81,8 +81,25 @@ new Splide('#awards_slide', {
 new Splide('#about_slide', {
     type: 'loop',
 
-    fixedWidth: '25%',
-    fixedHeight: '200px',
-    gap: '10px',
+    fixedWidth: 'calc(25% - 0px)',
+    fixedHeight: '240px',
+
+    breakpoints: {
+		1025: {
+            fixedHeight: '194px',
+		},
+
+        769: {
+            fixedWidth: '50%',
+            fixedHeight: '277px',
+		},
+
+        630: {
+            pagination: false,
+
+            fixedWidth: '100%',
+            fixedHeight: '277px',
+		},
+    },
 
 }).mount();
