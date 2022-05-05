@@ -408,5 +408,19 @@
         &__slider {
             grid-column: 1 / span 12;
         }
+
+        & .splide {
+
+            &__arrow {
+                
+                &--next {
+                    right: 0px;
+                }
+        
+                &--prev {
+                    left: 0px;
+                }
+            }
+        }
     }
 }

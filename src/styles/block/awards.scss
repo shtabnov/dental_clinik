@@ -107,5 +107,28 @@
         &__img {
             height: 464px;
         }
+
+        & .splide {
+
+            &__track {
+                transform: translate(-10px, 0px);
+            }
+
+            &__arrow {
+                
+                &--next {
+                    right: -25px;
+                }
+        
+                &--prev {
+                    left: -5px;
+                }
+            }
+
+            &__pagination__page {
+                position: relative;
+                left: 20px;
+            }
+        }
     }
 }

@@ -246,5 +246,23 @@
         &__foto {
             height: 237px;
         }
+
+        & .splide {
+
+            &__track {
+                transform: translate(-5px, 0px);
+            }
+            
+            &__arrow {
+                
+                &--next {
+                    right: -35px;
+                }
+        
+                &--prev {
+                    left: -10px;
+                }
+            }
+        }
     }
 }

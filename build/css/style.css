@@ -1298,16 +1298,17 @@ a {
 .video {
   margin-top: 30px;
 }
-.video__container {
-  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
-}
 .video__wrapper {
+  border-radius: 20px 20px 0 0;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+.video__article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
   padding: 60px 80px 30px 80px;
   background: #F3FEFE;
-  border-radius: 20px 20px 0 0;
 }
 .video__block {
   grid-column: 1/span 1;
@@ -1435,7 +1436,7 @@ a {
 }
 
 @media (max-width: 1025px) {
-  .video__wrapper {
+  .video__article {
     padding: 60px 61px 30px 61px;
   }
   .video__block {
@@ -1483,7 +1484,7 @@ a {
   }
 }
 @media (max-width: 769px) {
-  .video__wrapper {
+  .video__article {
     padding: 60px 22px 30px 22px;
   }
   .video__block {
@@ -1511,7 +1512,7 @@ a {
   }
 }
 @media (max-width: 630px) {
-  .video__wrapper {
+  .video__article {
     padding: 60px 22px 30px 22px;
   }
   .video__block {
@@ -1898,6 +1899,12 @@ a {
   .doctor__slider {
     grid-column: 1/span 12;
   }
+  .doctor .splide__arrow--next {
+    right: 0px;
+  }
+  .doctor .splide__arrow--prev {
+    left: 0px;
+  }
 }
 .selection {
   margin-top: 60px;
@@ -2184,6 +2191,19 @@ a {
   .reviews__img {
     display: none;
   }
+  .reviews .splide__track {
+    transform: translate(-9px, 0px);
+  }
+  .reviews .splide__arrow--next {
+    right: -35px;
+  }
+  .reviews .splide__arrow--prev {
+    left: -10px;
+  }
+  .reviews .splide__pagination__page {
+    position: relative;
+    left: 20px;
+  }
 }
 .awards {
   margin-top: 90px;
@@ -2267,6 +2287,19 @@ a {
   }
   .awards__img {
     height: 464px;
+  }
+  .awards .splide__track {
+    transform: translate(-10px, 0px);
+  }
+  .awards .splide__arrow--next {
+    right: -25px;
+  }
+  .awards .splide__arrow--prev {
+    left: -5px;
+  }
+  .awards .splide__pagination__page {
+    position: relative;
+    left: 20px;
   }
 }
 .about {
@@ -2460,5 +2493,14 @@ a {
   }
   .about__foto {
     height: 237px;
+  }
+  .about .splide__track {
+    transform: translate(-5px, 0px);
+  }
+  .about .splide__arrow--next {
+    right: -35px;
+  }
+  .about .splide__arrow--prev {
+    left: -10px;
   }
 }

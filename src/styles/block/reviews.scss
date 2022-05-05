@@ -210,5 +210,28 @@
         &__img {
             display: none;
         }
+
+        & .splide {
+
+            &__track {
+                transform: translate(-9px, 0px);
+            }
+
+            &__arrow {
+                
+                &--next {
+                    right: -35px;
+                }
+        
+                &--prev {
+                    left: -10px;
+                }
+            }
+
+            &__pagination__page {
+                position: relative;
+                left: 20px;
+            }
+        }
     }
 }
