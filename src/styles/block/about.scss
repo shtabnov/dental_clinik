@@ -204,6 +204,27 @@
         &__foto {
             height: 237px;
         }
+
+        & .splide {
+
+            &__track {
+                width: calc(100% + 40px);
+                transform: translate(-10px, 0px);
+            }
+
+            &__arrow {
+                
+                &--next {
+                    right: -5px;
+                    transform: translate(0, -100%);
+                }
+        
+                &--prev {
+                    left: -5px;
+                    transform: translate(0, -100%);
+                }
+            }
+        }
     }
 }
 

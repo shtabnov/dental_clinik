@@ -2020,22 +2020,22 @@ a {
     grid-template-columns: repeat(12, 1fr);
   }
   .selection__item:nth-child(1) {
-    grid-column: 3/span 8;
+    grid-column: 2/span 9;
   }
   .selection__item:nth-child(2) {
-    grid-column: 3/span 8;
+    grid-column: 2/span 9;
   }
   .selection__item:nth-child(3) {
-    grid-column: 3/span 8;
+    grid-column: 2/span 9;
   }
   .selection__item:nth-child(4) {
-    grid-column: 3/span 8;
+    grid-column: 2/span 9;
   }
   .selection__item:nth-child(5) {
-    grid-column: 3/span 8;
+    grid-column: 2/span 9;
   }
   .selection__item:nth-child(6) {
-    grid-column: 3/span 8;
+    grid-column: 2/span 9;
   }
 }
 .reviews {
@@ -2171,6 +2171,19 @@ a {
     bottom: 20px;
     left: calc(100% - 100px);
   }
+  .reviews .splide__track {
+    width: calc(100% + 40px);
+    position: relative;
+    left: -20px;
+  }
+  .reviews .splide__arrow--next {
+    right: -5px;
+    transform: translate(0, -100%);
+  }
+  .reviews .splide__arrow--prev {
+    left: -5px;
+    transform: translate(0, -100%);
+  }
 }
 @media (max-width: 630px) {
   .reviews__container h2 {
@@ -2195,13 +2208,13 @@ a {
     display: none;
   }
   .reviews .splide__track {
-    transform: translate(-9px, 0px);
+    transform: translate(-10px, 0px);
   }
   .reviews .splide__arrow--next {
-    right: -35px;
+    right: -5px;
   }
   .reviews .splide__arrow--prev {
-    left: -10px;
+    left: -5px;
   }
   .reviews .splide__pagination__page {
     position: relative;
@@ -2292,10 +2305,10 @@ a {
     height: 464px;
   }
   .awards .splide__track {
-    transform: translate(-10px, 0px);
+    transform: translate(-25px, 0px);
   }
   .awards .splide__arrow--next {
-    right: -25px;
+    right: -5px;
   }
   .awards .splide__arrow--prev {
     left: -5px;
@@ -2465,6 +2478,18 @@ a {
   }
   .about__foto {
     height: 237px;
+  }
+  .about .splide__track {
+    width: calc(100% + 40px);
+    transform: translate(-10px, 0px);
+  }
+  .about .splide__arrow--next {
+    right: -5px;
+    transform: translate(0, -100%);
+  }
+  .about .splide__arrow--prev {
+    left: -5px;
+    transform: translate(0, -100%);
   }
 }
 @media (max-width: 630px) {

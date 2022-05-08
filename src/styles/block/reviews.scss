@@ -170,6 +170,28 @@
                 left: calc(100% - 100px)
             }
         }
+
+        & .splide {
+
+            &__track {
+                width: calc(100% + 40px);
+                position: relative;
+                left: -20px;
+            }
+
+            &__arrow {
+                
+                &--next {
+                    right: -5px;
+                    transform: translate(0, -100%);
+                }
+        
+                &--prev {
+                    left: -5px;
+                    transform: translate(0, -100%);
+                }
+            }
+        }
     }
 }
 
@@ -214,17 +236,17 @@
         & .splide {
 
             &__track {
-                transform: translate(-9px, 0px);
+                transform: translate(-10px, 0px);
             }
 
             &__arrow {
                 
                 &--next {
-                    right: -35px;
+                    right: -5px;
                 }
         
                 &--prev {
-                    left: -10px;
+                    left: -5px;
                 }
             }
 

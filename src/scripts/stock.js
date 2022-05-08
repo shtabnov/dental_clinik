@@ -49,7 +49,7 @@ new Splide('#reviews_slide', {
 
         769: {
             perPage: 1,
-            fixedWidth: '100%',
+            fixedWidth: 'calc(100% - 0px)',
             fixedHeight: '340px',
 		},
     }
