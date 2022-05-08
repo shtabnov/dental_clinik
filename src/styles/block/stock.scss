@@ -157,11 +157,6 @@
     .stock {
 
         &__container {
-            text-align: center;
-    
-            & h2 {
-                font-size: 36px;
-            }
 
             & p {
                 display: inline;
@@ -193,10 +188,14 @@
 }
 
 @media (max-width: 769px) {
-    .splide {
+    .stock {
 
-        &__img {
-            height: 354px;
+        .splide {
+
+            &__img {
+                width: 354px;
+                height: 354px;
+            }
         }
     }
 }
@@ -228,6 +227,7 @@
         & .splide {
     
             &__img {
+                width: 280px;
                 height: 280px;
             }
         }

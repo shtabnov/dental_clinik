@@ -11,17 +11,17 @@ new Splide( '#stock_slide', {
 		1025: {
             fixedWidth : '300px',
             fixedHeight: '300px',
-            gap        : '42px',
+            gap        : '41px',
 		},
 
         769: {
-            fixedWidth : '354px',
+            fixedWidth : 'calc(50% - 10px)',
             fixedHeight: '354px',
             gap        : '20px',
 		},
 
         630: {
-            fixedWidth : '100%',
+            fixedWidth : '280px',
             fixedHeight: '280px',
             gap        : '10px',
 		},

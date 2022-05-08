@@ -101,6 +101,14 @@ a {
         color: $c1;
         margin-bottom: 30px;
     }
+
+
+    & > strong {
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 140%;
+        color: $sk;
+    }
 }
 
 @media (max-width: 1025px) {
@@ -116,7 +124,6 @@ a {
     
         & > h3 {
             max-width: 984px;
-            margin: 0 auto;
             font-size: 24px;
             margin-bottom: 60px;
         }
@@ -127,5 +134,19 @@ a {
     [class*="__container"] {
         max-width: 768px;
         margin: 0 auto;
+
+        & > h2 {
+            font-size: 24px;
+        }
+    
+        & > h3 {
+            font-size: 20px;
+            margin-bottom: 40px;
+        }
+
+        & > strong {
+            font-size: 20px;
+            color: $sk;
+        }
     }
 }
