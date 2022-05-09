@@ -1,0 +1,21 @@
+footer.footer 
+    .footer__container 
+        .footer__wrapper
+            a.footer__logo(href="index.html") 
+                img(src="images/logo.png", alt="logo")
+                p Стоматологическая клиника 
+            a.footer__open(href='#open')
+                span
+                span
+                span
+            a.footer__close(href='#close')
+                span
+                span
+            .footer__nav.nav
+                .nav__container
+                    nav.nav__body
+                        ul.nav__list
+                            each name in ['Главная', 'Акции', 'Услуги', 'Врачи', 'Отзывы', 'Лицензии', 'О клинике', 'Контакты']
+                                li.nav__item
+                                    a.nav__link(href=`#${name.replace(/\s+/g, '')}`)= name
+        
