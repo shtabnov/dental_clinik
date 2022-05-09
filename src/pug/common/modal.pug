@@ -1,0 +1,99 @@
+
+div.modal.micromodal-slide(id="modal-1" aria-hidden="true")
+    div.modal__overlay(tabindex="-1" data-micromodal-close)
+        div.modal__container(role="dialog" aria-modal="true" aria-labelledby="modal-1-title")
+            //- header.modal__header
+            //-     h2.modal__title(id="modal-1-title") Modal Title
+            //-     button.modal__close(aria-label="Close modal" data-micromodal-close)
+            div.modal__content(id="modal-1-content")
+                .stock__modal
+                    h2 Для участия в акции подпишитесь на нашу группу в ВК#[strong онтакте]
+                    a.btn Стать участником
+                    .stock__social 
+                            a(href="tg://msg?text=<?php echo urlencode( '<TEXT>' ); ?>&to=89260255767") 
+                                img(src="images/tg_icon.svg", alt="Telegram")
+                            a(href="https://wa.me/89260255767")
+                                img(src="images/wa_icon.svg", alt="Whatsapp")
+                            p спросить в мессенджере
+
+div.modal.micromodal-slide(id="modal-2" aria-hidden="true")
+    div.modal__overlay(tabindex="-2" data-micromodal-close)
+        div.modal__container(role="dialog" aria-modal="true" aria-labelledby="modal-2-title")
+            //- header.modal__header
+            //-     h2.modal__title(id="modal-1-title") Modal Title
+            //-     button.modal__close(aria-label="Close modal" data-micromodal-close)
+            div.modal__content(id="modal-2-content")
+                .price__modal
+                    h2 Скачайте прайс-лист и ознакомьтесь с ценами
+                    img(src="images/pdf_icon.png", alt="download price list")
+                    a.btn Скачать
+                    .price__social 
+                            a(href="tg://msg?text=<?php echo urlencode( '<TEXT>' ); ?>&to=89260255767") 
+                                img(src="images/tg_icon.svg", alt="Telegram")
+                            a(href="https://wa.me/89260255767")
+                                img(src="images/wa_icon.svg", alt="Whatsapp")
+                            p спросить в мессенджере
+div.modal.micromodal-slide(id="modal-3" aria-hidden="true")
+    div.modal__overlay(tabindex="-3" data-micromodal-close)
+        div.modal__container(role="dialog" aria-modal="true" aria-labelledby="modal-3-title")
+            header.modal__header
+                h2.modal__title(id="modal-1-title")
+                button.modal__close(aria-label="Close modal" data-micromodal-close)
+            div.modal__content(id="modal-3-content")
+                .doctor-quiz
+                    h2 Можете выбрать профильного врача, специализирующегося на
+                    h3 Терапия
+                    p Выберите врача который вам подходит и кликните на его фото:
+                    .doctor-quiz__list
+                        .doctor-quiz__item.card
+                                h3 Варданян Давид Араевич
+                                p Врач-стоматолог
+                                .card__description 
+                                    h4 Опыт работы более 5 лет
+                                    p 
+                                        | #[b Действующие сертификаты:]
+                                        | Действующие сертификаты:
+                                        | стоматология общей практики;
+                                        | стоматология хирургическая
+                                        | #[b Направленность:] 
+                                        | протезирование зубов, хирургическое удаление, терапевтическое лечение и отбеливание
+                                img(src="images/doctor_3.png", alt="Варданян Давид Араевич")
+                        .doctor-quiz__item.card
+                                h3 Соха Анастасия Юрьевна
+                                p Врач-стоматолог
+                                .card__description 
+                                    h4 Опыт работы более 10 лет
+                                    p 
+                                        | #[b Действующие сертификаты:]
+                                        | стоматология общей практики;
+                                        | стоматология терапевтическая;  стоматология ортодонтическая
+                                        | #[b Направленность:]
+                                        | терапевтическое лечение, эстетическая реставрация зубов и исправление прикуса любой сложности
+                                img(src="images/doctor_4.png", alt="Соха Анастасия Юрьевна")
+                        .doctor-quiz__item.card
+                                h3 Иванова Оксана Григорьевна
+                                p Врач-стоматолог
+                                .card__description 
+                                    h4 Опыт работы более 20 лет
+                                    p 
+                                        | #[b Действующие сертификаты:]
+                                        | стоматология общей практики;
+                                        | стоматология ортопедическая
+                                        | #[b Направленность: ]
+                                        | терапевтическое лечение, все виды протезирования, хирургическое удаление зубов
+                                img(src="images/doctor_5.png", alt="Иванова Оксана Григорьевна")
+                        .doctor-quiz__item.card
+                                h3 Анисимов Дмитрий Владимирович
+                                p Врач-стоматолог
+                                .card__description 
+                                    h4 Опыт работы более 5 лет
+                                    p 
+                                        | #[b Действующие сертификаты:]
+                                        | стоматология общей практики;
+                                        | стоматология хирургическая
+                                        | #[b Направленность:]
+                                        | имплантация, пародонтология, удаление зубов любой сложности
+                                img(src="images/doctor_2.png", alt="Анисимов Дмитрий Владимирович")
+                    .doctor-quiz__footer 
+                        a(href="") Хотите выбрать другую услугу?
+                        a(href="#Главная") На главную
