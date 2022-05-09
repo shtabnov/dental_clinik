@@ -115,30 +115,24 @@
 					<div class="splide__track">
 						<ul class="splide__list">
 							<li class="splide__slide">
-								<div class="splide__img"> <img src="images/slide_1.png" alt="Акция"></div><a class="btn btn_mod">Участвовать</a>
+								<div class="splide__img"> <img src="images/slide_1.png" alt="Акция"></div><a class="btn btn_mod" data-micromodal-trigger="modal-1">Участвовать</a>
 							</li>
 							<li class="splide__slide">
-								<div class="splide__img"> <img src="images/slide_2.png" alt="Акция"></div><a class="btn btn_mod">Участвовать</a>
+								<div class="splide__img"> <img src="images/slide_2.png" alt="Акция"></div><a class="btn btn_mod" data-micromodal-trigger="modal-1">Участвовать</a>
 							</li>
 							<li class="splide__slide">
-								<div class="splide__img"> <img src="images/slide_3.png" alt="Акция"></div><a class="btn btn_mod">Участвовать</a>
+								<div class="splide__img"> <img src="images/slide_3.png" alt="Акция"></div><a class="btn btn_mod" data-micromodal-trigger="modal-1">Участвовать</a>
 							</li>
 							<li class="splide__slide">
-								<div class="splide__img"> <img src="images/slide_1.png" alt="Акция"></div><a class="btn btn_mod">Участвовать</a>
+								<div class="splide__img"> <img src="images/slide_1.png" alt="Акция"></div><a class="btn btn_mod" data-micromodal-trigger="modal-1">Участвовать</a>
 							</li>
 							<li class="splide__slide">
-								<div class="splide__img"> <img src="images/slide_2.png" alt="Акция"></div><a class="btn btn_mod">Участвовать</a>
+								<div class="splide__img"> <img src="images/slide_2.png" alt="Акция"></div><a class="btn btn_mod" data-micromodal-trigger="modal-1">Участвовать</a>
 							</li>
 							<li class="splide__slide">
-								<div class="splide__img"> <img src="images/slide_3.png" alt="Акция"></div><a class="btn btn_mod">Участвовать</a>
+								<div class="splide__img"> <img src="images/slide_3.png" alt="Акция"></div><a class="btn btn_mod" data-micromodal-trigger="modal-1">Участвовать</a>
 							</li>
 						</ul>
-					</div>
-				</div>
-				<div class="stock__modal">
-					<h2>Для участия в акции подпишитесь на нашу группу в ВК<strong>онтакте</strong></h2><a class="btn">Стать участником</a>
-					<div class="stock__social"> <a href="tg://msg?text=&lt;?php echo urlencode( '&lt;TEXT&gt;' ); ?&gt;&amp;to=89260255767"> <img src="images/tg_icon.svg" alt="Telegram"></a><a href="https://wa.me/89260255767"><img src="images/wa_icon.svg" alt="Whatsapp"></a>
-						<p>спросить в мессенджере</p>
 					</div>
 				</div>
 			</div>
@@ -613,6 +607,20 @@
 				</div>
 			</div>
 		</section>
+		<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+					<div class="modal__content" id="modal-1-content">
+						<div class="stock__modal">
+							<h2>Для участия в акции подпишитесь на нашу группу в ВК<strong>онтакте</strong></h2><a class="btn">Стать участником</a>
+							<div class="stock__social"> <a href="tg://msg?text=&lt;?php echo urlencode( '&lt;TEXT&gt;' ); ?&gt;&amp;to=89260255767"> <img src="images/tg_icon.svg" alt="Telegram"></a><a href="https://wa.me/89260255767"><img src="images/wa_icon.svg" alt="Whatsapp"></a>
+								<p>спросить в мессенджере</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<footer class="footer"> 
 			<div class="footer__container"> 
 				<div class="footer__wrapper"><a class="footer__logo" href="index.html"> <img src="images/logo.png" alt="logo">
@@ -637,6 +645,7 @@
 			</div>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.1/dist/js/splide.min.js"> </script>
+		<script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"> </script>
 		<script src="scripts/main.min.js"> </script>
 	</body>
 </html>

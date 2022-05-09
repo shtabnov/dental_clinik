@@ -16,49 +16,6 @@
         margin-top: 30px;
     }
 
-    &__modal {
-        display: none;
-        max-width: 412px;
-        margin: 0 auto;
-        padding: 60px 34px;
-        background-color: $c4;
-
-        & h2 {
-            font-weight: 600;
-            font-size: 28px;
-            line-height: 140%;
-            text-align: center;
-            color: $c1;
-            
-            margin-bottom: 60px;
-        }
-
-        & p {
-            margin: 0;
-            font-weight: 400;
-            font-size: 18px;
-            line-height: 22px;
-            color: $c5;
-            margin-left: 21px;
-        }
-
-        & .btn {
-            position: relative;
-            margin-bottom: 30px;
-            padding: 7.5px 81.5px;
-            background-color: white;
-
-
-            &::before {
-                content: url('../images/vk.svg');
-                position: absolute;
-                left: 8%;
-                top: 50%;
-                transform: translate(0, -42%);
-            }
-        }
-    }
-
     &__social {
         display: flex;
         align-items: center;
