@@ -291,10 +291,6 @@
       color: $c1;
     }
 
-    img {
-      height: 620px;
-    }
-
     &:hover {
       outline: 4px solid #33D9DA;
     }
@@ -322,5 +318,11 @@
         line-height: 140%;
       }
     }
+  }
+}
+
+@media (max-width: 1025px) {
+  .doctor-quiz {
+    padding: 30px 80px;
   }
 }
