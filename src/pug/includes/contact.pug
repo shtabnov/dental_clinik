@@ -1,0 +1,22 @@
+//- include contact.pug
+
+section.contact(id='Контакты')
+    .contact__container 
+        .contact__wrapper 
+            .contact__form 
+                h2 Контакты
+                h3 г. Коломна, ул. Октябрьской революции д. 161
+                a Проложить маршрут
+                p с 9:00 до 21:00
+                span последняя запись до 19:00
+                .contact__phone 
+                    a( href="tel:+74966141515") +7 (496) 614-15-15
+                    a( href="tel:+79260255767") +7 (926) 025-57-67
+                    a( href="tel:+79850255566") +7 (985) 025-55-66
+                .contact__social
+                        a(href="tg://msg?text=<?php echo urlencode( '<TEXT>' ); ?>&to=89260255767") 
+                            img(src="images/tg_icon.svg", alt="Telegram")
+                        a(href="https://wa.me/89260255767")
+                            img(src="images/wa_icon.svg", alt="Whatsapp")
+                        p спросить в мессенджере
+            img(src="images/geo.svg", alt="локация")

@@ -2552,6 +2552,7 @@ a {
 }
 .record-form form input:last-child {
   background-color: #046DBF;
+  border: 2px solid #046DBF;
 }
 .record-form form h2 {
   font-weight: 700;
@@ -2572,6 +2573,123 @@ a {
 
 @media (max-width: 769px) {
   .record-form form {
+    grid-column: 1/span 12;
+  }
+}
+.contact {
+  background-image: url("../images/map.png");
+  background-position: 0% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contact__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 30px 0;
+}
+.contact__wrapper > img {
+  position: absolute;
+  top: 205px;
+  right: 330px;
+  opacity: 0.8;
+}
+.contact__form {
+  grid-column: 1/span 5;
+  background: #099DBAD0;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 30px 0 25px 60px;
+}
+.contact__form h2 {
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 120%;
+  color: white;
+  margin-bottom: 30px;
+}
+.contact__form h3 {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: white;
+  max-width: 338px;
+  margin-bottom: 20px;
+}
+.contact__form > a {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: #046DBF;
+}
+.contact__form > a::after {
+  content: "";
+  display: inline-block;
+  margin-left: 10px;
+  width: 20.6px;
+  height: 26.25px;
+  background-image: url("../images/geo.svg");
+  background-size: cover;
+}
+.contact__form p {
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+.contact__form span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+}
+.contact__phone {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.contact__phone a {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: white;
+}
+.contact__social {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.contact__social img {
+  height: 28px;
+  margin-right: 9px;
+}
+.contact__social p {
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
+@media (max-width: 1025px) {
+  .contact__wrapper > img {
+    top: 170px;
+    right: 200px;
+    opacity: 0.8;
+  }
+  .contact__form {
+    grid-column: 1/span 6;
+  }
+}
+@media (max-width: 769px) {
+  .contact__wrapper > img {
+    top: 170px;
+    right: 200px;
+    opacity: 0.8;
+  }
+  .contact__form {
     grid-column: 1/span 12;
   }
 }
